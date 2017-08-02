@@ -14,6 +14,7 @@
 		18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */; };
 		18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */; };
 		18CCC6F41F2FB77100F3C833 /* Soundy_CloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */; };
+		ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		18CCC6EF1F2FB77100F3C833 /* Soundy CloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Soundy CloudUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundy_CloudUITests.swift; sourceTree = "<group>"; };
 		18CCC6F51F2FB77100F3C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundy_Cloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.debug.xcconfig"; sourceTree = "<group>"; };
+		D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				18CCC6E71F2FB77100F3C833 /* Soundy CloudTests */,
 				18CCC6F21F2FB77100F3C833 /* Soundy CloudUITests */,
 				18CCC6D11F2FB77100F3C833 /* Products */,
+				F004E0DEE6B6F8A66FA31368 /* Pods */,
+				F6003A8FDFFC49E9BB55A613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "Soundy CloudUITests";
 			sourceTree = "<group>";
 		};
+		F004E0DEE6B6F8A66FA31368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */,
+				D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6003A8FDFFC49E9BB55A613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CCC6F81F2FB77100F3C833 /* Build configuration list for PBXNativeTarget "Soundy Cloud" */;
 			buildPhases = (
+				F803D10034798266A384513C /* [CP] Check Pods Manifest.lock */,
 				18CCC6CC1F2FB77100F3C833 /* Sources */,
 				18CCC6CD1F2FB77100F3C833 /* Frameworks */,
 				18CCC6CE1F2FB77100F3C833 /* Resources */,
+				D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */,
+				773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F803D10034798266A384513C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18CCC6CC1F2FB77100F3C833 /* Sources */ = {
@@ -417,28 +492,32 @@
 		};
 		18CCC6F91F2FB77100F3C833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				INFOPLIST_FILE = "Soundy Cloud/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		18CCC6FA1F2FB77100F3C833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				INFOPLIST_FILE = "Soundy Cloud/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -524,6 +603,7 @@
 				18CCC6FA1F2FB77100F3C833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18CCC6FB1F2FB77100F3C833 /* Build configuration list for PBXNativeTarget "Soundy CloudTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +612,7 @@
 				18CCC6FD1F2FB77100F3C833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18CCC6FE1F2FB77100F3C833 /* Build configuration list for PBXNativeTarget "Soundy CloudUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +621,7 @@
 				18CCC7001F2FB77100F3C833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
