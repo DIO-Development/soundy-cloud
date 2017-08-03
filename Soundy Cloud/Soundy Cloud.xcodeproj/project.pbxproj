@@ -143,8 +143,8 @@
 			children = (
 				185EC67B1F33081D0007C179 /* Models */,
 				185EC67A1F3307FF0007C179 /* Interface */,
-				18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */,
 				18CCC6D71F2FB77100F3C833 /* Main.storyboard */,
+				18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */,
 				18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */,
 				18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */,
 				18CCC6DF1F2FB77100F3C833 /* Info.plist */,
