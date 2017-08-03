@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185EC67E1F3308AC0007C179 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */; };
+		185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
+		185EC6821F3333BC0007C179 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
 		18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */; };
-		18CCC6D61F2FB77100F3C833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D51F2FB77100F3C833 /* ViewController.swift */; };
 		18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6D71F2FB77100F3C833 /* Main.storyboard */; };
 		18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */; };
 		18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		185EC67F1F33090F0007C179 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		185EC6811F3333BC0007C179 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		18CCC6D01F2FB77100F3C833 /* Soundy Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soundy Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18CCC6D51F2FB77100F3C833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18CCC6D81F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CCC6DD1F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185EC67A1F3307FF0007C179 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				185EC67C1F3308330007C179 /* Main TabBar Controller */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		185EC67B1F33081D0007C179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				185EC6831F3334000007C179 /* API models */,
+				185EC6811F3333BC0007C179 /* TabItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		185EC67C1F3308330007C179 /* Main TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */,
+				185EC67F1F33090F0007C179 /* TabBarViewModel.swift */,
+			);
+			path = "Main TabBar Controller";
+			sourceTree = "<group>";
+		};
+		185EC6831F3334000007C179 /* API models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API models";
+			sourceTree = "<group>";
+		};
 		18CCC6C71F2FB77100F3C833 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +141,9 @@
 		18CCC6D21F2FB77100F3C833 /* Soundy Cloud */ = {
 			isa = PBXGroup;
 			children = (
+				185EC67B1F33081D0007C179 /* Models */,
+				185EC67A1F3307FF0007C179 /* Interface */,
 				18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */,
-				18CCC6D51F2FB77100F3C833 /* ViewController.swift */,
 				18CCC6D71F2FB77100F3C833 /* Main.storyboard */,
 				18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */,
 				18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */,
@@ -359,7 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CCC6D61F2FB77100F3C833 /* ViewController.swift in Sources */,
+				185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */,
+				185EC67E1F3308AC0007C179 /* MainTabBarViewController.swift in Sources */,
+				185EC6821F3333BC0007C179 /* TabItem.swift in Sources */,
 				18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
