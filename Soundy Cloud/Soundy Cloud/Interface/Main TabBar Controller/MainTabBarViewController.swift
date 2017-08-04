@@ -9,15 +9,15 @@
 import UIKit
 
 class MainTabBarViewController: UITabBarController {
-  var viewModel : TabBarViewModel!
+  var viewModel: TabBarViewModel!
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    viewModel = TabBarViewModel(tabController: self, types:[.Favorites, .List, .Player, .Profile])
+    viewModel = TabBarViewModel(tabController: self, types:[.favorites, .list, .player, .profile])
   }
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    viewModel = TabBarViewModel(tabController: self, types:[.Favorites, .List, .Player, .Profile])
+    viewModel = TabBarViewModel(tabController: self, types:[.favorites, .list, .player, .profile])
     
   }
   override func viewDidLoad() {
@@ -32,10 +32,9 @@ class MainTabBarViewController: UITabBarController {
   }
   
 }
-extension MainTabBarViewController : TabCompatible{
+extension MainTabBarViewController : TabCompatible {
   func tabsUpdated(controllers: [UIViewController]) {
     self.viewControllers = controllers
   }
-  
   
 }

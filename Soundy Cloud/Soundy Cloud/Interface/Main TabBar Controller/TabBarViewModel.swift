@@ -7,15 +7,14 @@
 //
 import UIKit
 
-
 protocol TabCompatible {
   func tabsUpdated(controllers: [UIViewController])
 }
 
 class TabBarViewModel {
-  fileprivate var tabController : TabCompatible?
-  fileprivate var tabItems : [TabItem] {
-    didSet{
+  fileprivate var tabController: TabCompatible?
+  fileprivate var tabItems: [TabItem] {
+    didSet {
       guard let tabVC = tabController else {
         return
       }
@@ -40,9 +39,9 @@ class TabBarViewModel {
     self.tabItems = items
   }
   private func controllerForItem(tabItem: TabItem) -> UIViewController {
-    var controller : UIViewController
+    var controller: UIViewController
     switch tabItem.type {
-    case .Favorites:
+    case .favorites:
       controller = UIViewController(nibName: nil, bundle: nil)
       controller.view.backgroundColor = UIColor.red
     default:
@@ -53,9 +52,9 @@ class TabBarViewModel {
     controller.tabBarItem.image = UIImage.init(named: tabItem.iconName)
     return controller
   }
-  private func viewControllers() -> [UIViewController]{
+  private func viewControllers() -> [UIViewController] {
     var controllers = [UIViewController]()
-    for item in tabItems{
+    for item in tabItems {
       controllers.append(controllerForItem(tabItem: item))
     }
     return controllers
