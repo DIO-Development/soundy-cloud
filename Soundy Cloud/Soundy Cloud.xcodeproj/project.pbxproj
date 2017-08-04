@@ -203,7 +203,8 @@
 				18CCC6CE1F2FB77100F3C833 /* Resources */,
 				D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */,
 				773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */,
-				BBA71CE31F33CA2200D6DF69 /* ShellScript */,
+				185EC6861F3465330007C179 /* SwiftLint autocorrect script */,
+				BBA71CE31F33CA2200D6DF69 /* SwiftLint check script */,
 			);
 			buildRules = (
 			);
@@ -322,6 +323,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		185EC6861F3465330007C179 /* SwiftLint autocorrect script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,13 +352,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBA71CE31F33CA2200D6DF69 /* ShellScript */ = {
+		BBA71CE31F33CA2200D6DF69 /* SwiftLint check script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "SwiftLint check script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
