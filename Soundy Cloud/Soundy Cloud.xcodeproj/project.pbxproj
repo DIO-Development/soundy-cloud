@@ -17,6 +17,7 @@
 		18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */; };
 		18CCC6F41F2FB77100F3C833 /* Soundy_CloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */; };
 		ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */; };
+		BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundy_CloudUITests.swift; sourceTree = "<group>"; };
 		18CCC6F51F2FB77100F3C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundy_Cloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.debug.xcconfig"; sourceTree = "<group>"; };
 		D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		18CCC6C71F2FB77100F3C833 = {
 			isa = PBXGroup;
 			children = (
+				BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */,
 				18CCC6D21F2FB77100F3C833 /* Soundy Cloud */,
 				18CCC6E71F2FB77100F3C833 /* Soundy CloudTests */,
 				18CCC6F21F2FB77100F3C833 /* Soundy CloudUITests */,
@@ -200,6 +203,7 @@
 				18CCC6CE1F2FB77100F3C833 /* Resources */,
 				D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */,
 				773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */,
+				BBA71CE31F33CA2200D6DF69 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -294,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */,
 				18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */,
 				18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */,
 				18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */,
@@ -331,6 +336,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BBA71CE31F33CA2200D6DF69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

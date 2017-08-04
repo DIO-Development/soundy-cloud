@@ -18,18 +18,18 @@ class MainTabBarViewController: UITabBarController {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     viewModel = TabBarViewModel(tabController: self, types:[.Favorites, .List, .Player, .Profile])
-
+    
   }
   override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
   
 }
 extension MainTabBarViewController : TabCompatible{
