@@ -36,5 +36,9 @@ extension MainTabBarViewController : TabCompatible {
   func tabsUpdated(controllers: [UIViewController]) {
     self.viewControllers = controllers
   }
-  
+}
+extension MainTabBarViewController : UITabBarControllerDelegate {
+  func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    
+  }
 }

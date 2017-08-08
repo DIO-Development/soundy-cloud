@@ -10,10 +10,13 @@ import UIKit
 protocol TabCompatible {
   func tabsUpdated(controllers: [UIViewController])
 }
-
+extension TabCompatible {
+  func tabsUpdated(controllers: [UIViewController]) { }
+  
+}
 class TabBarViewModel {
   fileprivate var tabController: TabCompatible?
-  fileprivate var tabItems: [TabItem] {
+  fileprivate(set) public var tabItems: [TabItem] {
     didSet {
       guard let tabVC = tabController else {
         return
@@ -21,16 +24,20 @@ class TabBarViewModel {
       tabVC.tabsUpdated(controllers: self.viewControllers())
     }
   }
-  
+  // MARK: - Methods -
   init(tabController: TabCompatible, types: [TabType]) {
     self.tabController = tabController
     self.tabItems = []
     createTabItems(types: types)
   }
-  
-  func switchedTo(controller: UIViewController!) {
+  func switchedTo(_ type: TabType) {
     
   }
+  func deleteTab(_ type: TabType) {
+    
+  }
+  
+  // MARK: - Private -
   private func createTabItems(types: [TabType]) {
     var items = [TabItem]()
     for type in types {

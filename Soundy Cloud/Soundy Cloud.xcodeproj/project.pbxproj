@@ -10,6 +10,9 @@
 		185EC67E1F3308AC0007C179 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */; };
 		185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
 		185EC6821F3333BC0007C179 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
+		189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A33361F38656100564918 /* TabBarViewModelTests.swift */; };
+		189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
+		189A33391F3869FA00564918 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
 		18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */; };
 		18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6D71F2FB77100F3C833 /* Main.storyboard */; };
 		18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */; };
@@ -41,6 +44,7 @@
 		185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		185EC67F1F33090F0007C179 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		185EC6811F3333BC0007C179 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		189A33361F38656100564918 /* TabBarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModelTests.swift; sourceTree = "<group>"; };
 		18CCC6D01F2FB77100F3C833 /* Soundy Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soundy Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CCC6D81F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */,
+				189A33361F38656100564918 /* TabBarViewModelTests.swift */,
 				18CCC6EA1F2FB77100F3C833 /* Info.plist */,
 			);
 			path = "Soundy CloudTests";
@@ -442,6 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */,
+				189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */,
+				189A33391F3869FA00564918 /* TabItem.swift in Sources */,
 				18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
