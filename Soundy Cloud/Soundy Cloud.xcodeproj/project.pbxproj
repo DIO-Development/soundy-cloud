@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185EC67E1F3308AC0007C179 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */; };
+		185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
+		185EC6821F3333BC0007C179 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
+		189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A33361F38656100564918 /* TabBarViewModelTests.swift */; };
+		189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
+		189A33391F3869FA00564918 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
 		18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */; };
-		18CCC6D61F2FB77100F3C833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D51F2FB77100F3C833 /* ViewController.swift */; };
 		18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6D71F2FB77100F3C833 /* Main.storyboard */; };
 		18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */; };
 		18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */; };
 		18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */; };
 		18CCC6F41F2FB77100F3C833 /* Soundy_CloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */; };
 		ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */; };
+		BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		185EC67F1F33090F0007C179 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		185EC6811F3333BC0007C179 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		189A33361F38656100564918 /* TabBarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModelTests.swift; sourceTree = "<group>"; };
 		18CCC6D01F2FB77100F3C833 /* Soundy Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soundy Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18CCC6D51F2FB77100F3C833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18CCC6D81F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CCC6DD1F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundy_CloudUITests.swift; sourceTree = "<group>"; };
 		18CCC6F51F2FB77100F3C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundy_Cloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.debug.xcconfig"; sourceTree = "<group>"; };
 		D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy Cloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +89,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185EC67A1F3307FF0007C179 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				185EC67C1F3308330007C179 /* Main TabBar Controller */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		185EC67B1F33081D0007C179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				185EC6831F3334000007C179 /* API models */,
+				185EC6811F3333BC0007C179 /* TabItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		185EC67C1F3308330007C179 /* Main TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */,
+				185EC67F1F33090F0007C179 /* TabBarViewModel.swift */,
+			);
+			path = "Main TabBar Controller";
+			sourceTree = "<group>";
+		};
+		185EC6831F3334000007C179 /* API models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API models";
+			sourceTree = "<group>";
+		};
 		18CCC6C71F2FB77100F3C833 = {
 			isa = PBXGroup;
 			children = (
+				BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */,
 				18CCC6D21F2FB77100F3C833 /* Soundy Cloud */,
 				18CCC6E71F2FB77100F3C833 /* Soundy CloudTests */,
 				18CCC6F21F2FB77100F3C833 /* Soundy CloudUITests */,
@@ -104,9 +148,10 @@
 		18CCC6D21F2FB77100F3C833 /* Soundy Cloud */ = {
 			isa = PBXGroup;
 			children = (
-				18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */,
-				18CCC6D51F2FB77100F3C833 /* ViewController.swift */,
+				185EC67B1F33081D0007C179 /* Models */,
+				185EC67A1F3307FF0007C179 /* Interface */,
 				18CCC6D71F2FB77100F3C833 /* Main.storyboard */,
+				18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */,
 				18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */,
 				18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */,
 				18CCC6DF1F2FB77100F3C833 /* Info.plist */,
@@ -118,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */,
+				189A33361F38656100564918 /* TabBarViewModelTests.swift */,
 				18CCC6EA1F2FB77100F3C833 /* Info.plist */,
 			);
 			path = "Soundy CloudTests";
@@ -162,6 +208,8 @@
 				18CCC6CE1F2FB77100F3C833 /* Resources */,
 				D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */,
 				773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */,
+				185EC6861F3465330007C179 /* SwiftLint autocorrect script */,
+				BBA71CE31F33CA2200D6DF69 /* SwiftLint check script */,
 			);
 			buildRules = (
 			);
@@ -256,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */,
 				18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */,
 				18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */,
 				18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */,
@@ -279,6 +328,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		185EC6861F3465330007C179 /* SwiftLint autocorrect script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		773364928EC9B64E8C00E3AB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +356,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BBA71CE31F33CA2200D6DF69 /* SwiftLint check script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint check script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		D387844BA3F60528B3EF8E67 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -359,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CCC6D61F2FB77100F3C833 /* ViewController.swift in Sources */,
+				185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */,
+				185EC67E1F3308AC0007C179 /* MainTabBarViewController.swift in Sources */,
+				185EC6821F3333BC0007C179 /* TabItem.swift in Sources */,
 				18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */,
+				189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */,
+				189A33391F3869FA00564918 /* TabItem.swift in Sources */,
 				18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
