@@ -18,10 +18,16 @@ class TabBarViewModel {
   fileprivate var tabController: TabCompatible?
   fileprivate(set) public var tabItems: [TabItem] {
     didSet {
+      self.viewControllers =  self.createViewControllers()
+    }
+  }
+  fileprivate var viewControllers: [UIViewController]? {
+    didSet {
+      guard let items = viewControllers else { return }
       guard let tabVC = tabController else {
         return
       }
-      tabVC.tabsUpdated(controllers: self.viewControllers())
+      tabVC.tabsUpdated(controllers: items)
     }
   }
   // MARK: - Methods -
@@ -59,7 +65,7 @@ class TabBarViewModel {
     controller.tabBarItem.image = UIImage.init(named: tabItem.iconName)
     return controller
   }
-  private func viewControllers() -> [UIViewController] {
+  private func createViewControllers() -> [UIViewController] {
     var controllers = [UIViewController]()
     for item in tabItems {
       controllers.append(controllerForItem(tabItem: item))
