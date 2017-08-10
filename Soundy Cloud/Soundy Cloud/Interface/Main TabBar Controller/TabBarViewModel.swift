@@ -24,9 +24,7 @@ class TabBarViewModel {
   fileprivate var viewControllers: [UIViewController]? {
     didSet {
       guard let items = viewControllers else { return }
-      guard let tabVC = tabController else {
-        return
-      }
+      guard let tabVC = tabController else { return }
       tabVC.tabsUpdated(controllers: items)
     }
   }
