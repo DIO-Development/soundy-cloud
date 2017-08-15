@@ -7,6 +7,8 @@
 //
 
 import XCTest
+@testable import Soundy_Cloud
+
 
 extension UIViewController : TabCompatible { }
 class TabBarViewModelTests: XCTestCase {

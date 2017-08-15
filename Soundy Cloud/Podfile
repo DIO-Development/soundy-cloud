@@ -21,6 +21,9 @@ pod 'Moya-ObjectMapper/RxSwift'
 pod 'ObjectMapper', '~> 2.2'
 
 end
+target 'Soundy CloudTests' do
+  pod 'ObjectMapper', '~> 2.2'
+end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
