@@ -44,18 +44,6 @@ struct Track: ImmutableMappable {
   //let sharing: Visibility
   let streamable: Bool
   let downloadable: Bool
-  
-//  let trackTypeTransform = TransformOf<TrackType, String>(fromJSON: { (value: String?) -> TrackType? in
-//    guard let rawString = value else {
-//      return nil
-//    }
-//    return TrackType(rawValue: rawString)
-//  }) {(value: TrackType?) -> String? in
-//    guard let type = value else {
-//      return nil
-//    }
-//    return type.rawValue
-//  }
 
   init(map: Map) throws {
 

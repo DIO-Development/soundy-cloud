@@ -11,7 +11,7 @@
 		180FAC241F419AD1003BE14B /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC231F419AD1003BE14B /* Playlist.swift */; };
 		180FAC261F4302C2003BE14B /* Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC251F4302C2003BE14B /* Transforms.swift */; };
 		180FAC2A1F4307D7003BE14B /* Track.json in Resources */ = {isa = PBXBuildFile; fileRef = 180FAC291F4307D7003BE14B /* Track.json */; };
-		180FAC2C1F430848003BE14B /* APIModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC2B1F430848003BE14B /* APIModelTests.swift */; };
+		180FAC2C1F430848003BE14B /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC2B1F430848003BE14B /* TrackTests.swift */; };
 		180FAC321F4308A0003BE14B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C011F3C6684004E958A /* Track.swift */; };
 		180FAC331F4308A0003BE14B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C031F3C6CD4004E958A /* User.swift */; };
 		180FAC341F4308A0003BE14B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C051F3C6F0C004E958A /* Label.swift */; };
@@ -24,6 +24,7 @@
 		189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A33361F38656100564918 /* TabBarViewModelTests.swift */; };
 		189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC67F1F33090F0007C179 /* TabBarViewModel.swift */; };
 		189A33391F3869FA00564918 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EC6811F3333BC0007C179 /* TabItem.swift */; };
+		18A6DACA1F4ADC7D000529A9 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6DAC91F4ADC7D000529A9 /* UserTests.swift */; };
 		18CCC6D41F2FB77100F3C833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */; };
 		18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6D71F2FB77100F3C833 /* Main.storyboard */; };
 		18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */; };
@@ -59,12 +60,16 @@
 		180FAC231F419AD1003BE14B /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		180FAC251F4302C2003BE14B /* Transforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transforms.swift; sourceTree = "<group>"; };
 		180FAC291F4307D7003BE14B /* Track.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Track.json; sourceTree = "<group>"; };
-		180FAC2B1F430848003BE14B /* APIModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModelTests.swift; sourceTree = "<group>"; };
+		180FAC2B1F430848003BE14B /* TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
 		180FAC391F431359003BE14B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Soundy_Cloud-gmtujrtuceuktzfyxmjnzmoematg/Build/Products/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		180FAC3C1F45AD11003BE14B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
+		180FAC3E1F45AD15003BE14B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble/Nimble.framework"; sourceTree = "<group>"; };
+		180FAC401F45AD19003BE14B /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = "Pods/../build/Debug-iphoneos/Fakery/Fakery.framework"; sourceTree = "<group>"; };
 		185EC67D1F3308AC0007C179 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		185EC67F1F33090F0007C179 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		185EC6811F3333BC0007C179 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		189A33361F38656100564918 /* TabBarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModelTests.swift; sourceTree = "<group>"; };
+		18A6DAC91F4ADC7D000529A9 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		18CCC6D01F2FB77100F3C833 /* Soundy Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soundy Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6D31F2FB77100F3C833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CCC6D81F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,7 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				180FAC281F43078C003BE14B /* Sample data */,
-				180FAC2B1F430848003BE14B /* APIModelTests.swift */,
+				180FAC2B1F430848003BE14B /* TrackTests.swift */,
+				18A6DAC91F4ADC7D000529A9 /* UserTests.swift */,
 			);
 			path = "API Model tests";
 			sourceTree = "<group>";
@@ -244,6 +250,9 @@
 		F6003A8FDFFC49E9BB55A613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180FAC401F45AD19003BE14B /* Fakery.framework */,
+				180FAC3E1F45AD15003BE14B /* Nimble.framework */,
+				180FAC3C1F45AD11003BE14B /* Quick.framework */,
 				180FAC391F431359003BE14B /* ObjectMapper.framework */,
 				29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */,
 				60AF58E92AB978A9AE32F675 /* Pods_Soundy_CloudTests.framework */,
@@ -558,12 +567,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A6DACA1F4ADC7D000529A9 /* UserTests.swift in Sources */,
 				189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */,
 				189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */,
 				189A33391F3869FA00564918 /* TabItem.swift in Sources */,
 				18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */,
 				180FAC3B1F431859003BE14B /* Transforms.swift in Sources */,
-				180FAC2C1F430848003BE14B /* APIModelTests.swift in Sources */,
+				180FAC2C1F430848003BE14B /* TrackTests.swift in Sources */,
 				180FAC321F4308A0003BE14B /* Track.swift in Sources */,
 				180FAC351F4308A0003BE14B /* Activity.swift in Sources */,
 				180FAC341F4308A0003BE14B /* Label.swift in Sources */,
@@ -723,6 +733,7 @@
 			baseConfigurationReference = D573653A210D793301258FC5 /* Pods-Soundy Cloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F5Z36C68HZ;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Soundy Cloud/Info.plist";
@@ -740,6 +751,7 @@
 			baseConfigurationReference = D7F9075D7267250B09406851 /* Pods-Soundy Cloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F5Z36C68HZ;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Soundy Cloud/Info.plist";
@@ -758,9 +770,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Fakery",
+				);
 				INFOPLIST_FILE = "Soundy CloudTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-CloudTests";
@@ -777,9 +796,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Fakery",
+				);
 				INFOPLIST_FILE = "Soundy CloudTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-CloudTests";
