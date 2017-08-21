@@ -27,7 +27,7 @@ class UserTests: QuickSpec {
       let city = faker.address.city()
       let description = faker.lorem.sentence()
       let website = faker.internet.url()
-      let online = faker.number.randomBool()§
+      let online = faker.number.randomBool()
       let trackCount = faker.number.randomInt()
       let playlistCount = faker.number.randomInt()
       let followersCount = faker.number.randomInt()
