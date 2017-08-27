@@ -38,7 +38,7 @@ struct Playlist: ImmutableMappable {
   
   init(map: Map) throws {
      playlistId = try map.value("id")
-     creationDate = try map.value("created_at")
+     creationDate = try map.value("created_at", using: CustomDateFormatTransform(formatString: "yyyy-MM-dd HH:mm:ss Z"))
      owner = try map.value("user")
      label = try map.value("label")
      title = try map.value("title")
