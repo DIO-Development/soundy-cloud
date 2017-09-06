@@ -822,12 +822,6 @@
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Fakery",
-				);
 				INFOPLIST_FILE = "Soundy CloudTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-CloudTests";
@@ -848,12 +842,6 @@
 				DEVELOPMENT_TEAM = Q63FRD6E73;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Nimble",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Fakery",
-				);
 				INFOPLIST_FILE = "Soundy CloudTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "drim.tim.Soundy-CloudTests";
