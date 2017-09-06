@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "706499C1F84FB66BED5064698DA36687"
+               BlueprintIdentifier = "2D124A1EB2759373EAABB12061904C15"
                BuildableName = "Pods_Soundy_Cloud.framework"
                BlueprintName = "Pods-Soundy Cloud"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "706499C1F84FB66BED5064698DA36687"
+            BlueprintIdentifier = "2D124A1EB2759373EAABB12061904C15"
             BuildableName = "Pods_Soundy_Cloud.framework"
             BlueprintName = "Pods-Soundy Cloud"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -36,6 +36,7 @@
 		18E76C061F3C6F0C004E958A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C051F3C6F0C004E958A /* Label.swift */; };
 		18E76C081F3DC2CA004E958A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C071F3DC2CA004E958A /* Activity.swift */; };
 		ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */; };
+		BB0A1FB81F603FA90061932A /* SoundCloudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0A1FB71F603FA90061932A /* SoundCloudAPI.swift */; };
 		BB173D1B1F52CB9F0048A8B7 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173D1A1F52CB9F0048A8B7 /* TestHelpers.swift */; };
 		BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */; };
 		BBDD26BC1F50365800409AB7 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD26BB1F50365800409AB7 /* PlaylistTests.swift */; };
@@ -91,6 +92,10 @@
 		29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundy_Cloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AF58E92AB978A9AE32F675 /* Pods_Soundy_CloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundy_CloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68BEB90D54B2CBAFB49A221 /* Pods-Soundy CloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundy CloudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soundy CloudTests/Pods-Soundy CloudTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB0A1FB71F603FA90061932A /* SoundCloudAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloudAPI.swift; sourceTree = "<group>"; };
+		BB0A1FBA1F603FF90061932A /* Playlist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Playlist.json; sourceTree = "<group>"; };
+		BB0A1FBB1F603FF90061932A /* Track.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Track.json; sourceTree = "<group>"; };
+		BB0A1FBC1F603FF90061932A /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		BB173D1A1F52CB9F0048A8B7 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BBDD26BB1F50365800409AB7 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
@@ -210,6 +215,7 @@
 		18CCC6D21F2FB77100F3C833 /* Soundy Cloud */ = {
 			isa = PBXGroup;
 			children = (
+				BB0A1FB61F603F540061932A /* API */,
 				185EC67B1F33081D0007C179 /* Models */,
 				185EC67A1F3307FF0007C179 /* Interface */,
 				18CCC6D71F2FB77100F3C833 /* Main.storyboard */,
@@ -217,6 +223,7 @@
 				18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */,
 				18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */,
 				18CCC6DF1F2FB77100F3C833 /* Info.plist */,
+				BB0A1FB91F603FD90061932A /* Stubbed Data */,
 			);
 			path = "Soundy Cloud";
 			sourceTree = "<group>";
@@ -240,6 +247,24 @@
 				18CCC6F51F2FB77100F3C833 /* Info.plist */,
 			);
 			path = "Soundy CloudUITests";
+			sourceTree = "<group>";
+		};
+		BB0A1FB61F603F540061932A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A1FB71F603FA90061932A /* SoundCloudAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BB0A1FB91F603FD90061932A /* Stubbed Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A1FBA1F603FF90061932A /* Playlist.json */,
+				BB0A1FBB1F603FF90061932A /* Track.json */,
+				BB0A1FBC1F603FF90061932A /* User.json */,
+			);
+			path = "Stubbed Data";
 			sourceTree = "<group>";
 		};
 		F004E0DEE6B6F8A66FA31368 /* Pods */ = {
@@ -409,9 +434,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Soundy CloudTests/Pods-Soundy CloudTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -453,13 +487,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Soundy CloudTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBA71CE31F33CA2200D6DF69 /* SwiftLint check script */ = {
@@ -499,6 +536,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -514,6 +552,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -546,7 +585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -557,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180FAC261F4302C2003BE14B /* Transforms.swift in Sources */,
+				BB0A1FB81F603FA90061932A /* SoundCloudAPI.swift in Sources */,
 				185EC6801F33090F0007C179 /* TabBarViewModel.swift in Sources */,
 				18E76C021F3C6684004E958A /* Track.swift in Sources */,
 				180FAC241F419AD1003BE14B /* Playlist.swift in Sources */,

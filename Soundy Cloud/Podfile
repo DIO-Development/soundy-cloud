@@ -1,5 +1,17 @@
+platform :ios, '9.1'
 use_frameworks!
 inhibit_all_warnings!
+
+plugin 'cocoapods-keys', {
+  :project => "Soundy Cloud",
+  :target => "Soundy Cloud",
+  :keys => [
+  "SoundCloudAPIDevelopmentClient",
+  "SoundCloudAPIDevelopmentSecret",
+  "SoundCloudAPIProductionClient",
+  "SoundCloudAPIProductionSecret"
+  ]
+}
 
 def rx_swift
 pod 'RxSwift',    '~> 3.0'
