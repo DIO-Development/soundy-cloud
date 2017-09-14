@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54A9843D12CD41A00F76B552A4C0AB8C"
-               BuildableName = "Realm.framework"
-               BlueprintName = "Realm"
+               BlueprintIdentifier = "DDC34E9721BEF38205D33E17254B42DB"
+               BuildableName = "Moya.framework"
+               BlueprintName = "Moya.default-RxSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "54A9843D12CD41A00F76B552A4C0AB8C"
-            BuildableName = "Realm.framework"
-            BlueprintName = "Realm"
+            BlueprintIdentifier = "DDC34E9721BEF38205D33E17254B42DB"
+            BuildableName = "Moya.framework"
+            BlueprintName = "Moya.default-RxSwift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

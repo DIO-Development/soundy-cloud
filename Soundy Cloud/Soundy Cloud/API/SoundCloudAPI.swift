@@ -21,7 +21,7 @@ public enum SoundCloud {
 }
 
 extension SoundCloud: TargetType {
-  public var baseURL: URL { return URL(string: "http://api.soundcloud.com")! }
+  public var baseURL: URL { return URL(string: "https://api.soundcloud.com")! }
   
   public var path: String {
     switch self {

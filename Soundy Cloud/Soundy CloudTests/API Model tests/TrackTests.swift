@@ -14,7 +14,6 @@ import ObjectMapper
 
 @testable import Soundy_Cloud
 
-
 class TrackTests: QuickSpec {
   
   override func spec() {
@@ -32,25 +31,24 @@ class TrackTests: QuickSpec {
       let streamable = faker.number.randomBool()
       let downloadable = faker.number.randomBool()
       
-      let jsonData = ["id" : trackId,
-                      "user" : ["id" : 123, "username" : "jokn dou"],
-                      "label" : ["id" : 123],
-                      "user_id" : userId,
-                      "title" : title,
-                      "description" : description,
-                      "duration" : duration,
-                      "genre" : genre,
-                      "track_type" : type.rawValue,
+      let jsonData = ["id": trackId,
+                      "user": ["id": 123, "username": "jokn dou"],
+                      "label": ["id": 123],
+                      "user_id": userId,
+                      "title": title,
+                      "description": description,
+                      "duration": duration,
+                      "genre": genre,
+                      "track_type": type.rawValue,
                       "streamable": streamable,
                       "downloadable": downloadable] as [String : Any]
       var track: Track
-      do{
+      do {
         track = try Track(JSON: jsonData)
       } catch {
         if let mapError = error as? MapError {
           XCTAssertTrue(false, mapError.description)
-        }
-        else {
+        } else {
           XCTAssertTrue(false, error.localizedDescription)
         }
         return

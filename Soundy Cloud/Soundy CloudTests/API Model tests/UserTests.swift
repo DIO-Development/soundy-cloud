@@ -15,6 +15,7 @@ import ObjectMapper
 
 class UserTests: QuickSpec {
 
+  // swiftlint:disable:next function_body_length
   override func spec() {
     it("converts from JSON") {
       let faker = Faker()
@@ -34,29 +35,27 @@ class UserTests: QuickSpec {
       let followingsCount = faker.number.randomInt()
       let publicFavoritesCount = faker.number.randomInt()
       
-      let jsonData = ["id" : userId,
-                      "username" : username,
-                      "country" : country,
-                      "full_name" : fullName,
-                      "city" : city,
-                      "description" : description,
-                      "website" : website,
-                      "online" : online,
-                      "track_count" : trackCount,
-                      "playlist_count" : playlistCount,
-                      "followers_count" : followersCount,
-                      "followings_count" : followingsCount,
-                      "public_favorites_count" : publicFavoritesCount] as [String : Any]
+      let jsonData = ["id": userId,
+                      "username": username,
+                      "country": country,
+                      "full_name": fullName,
+                      "city": city,
+                      "description": description,
+                      "website": website,
+                      "online": online,
+                      "track_count": trackCount,
+                      "playlist_count": playlistCount,
+                      "followers_count": followersCount,
+                      "followings_count": followingsCount,
+                      "public_favorites_count": publicFavoritesCount] as [String : Any]
       
-      var user : User
-      do{
+      var user: User
+      do {
         user = try User(JSON: jsonData)
-      }
-      catch{
+      } catch {
         if let mapError = error as? MapError {
           XCTAssertTrue(false, mapError.description)
-        }
-        else {
+        } else {
           XCTAssertTrue(false, error.localizedDescription)
         }
         return
@@ -74,7 +73,6 @@ class UserTests: QuickSpec {
       expect(user.followersCount) == followersCount
       expect(user.followingsCount) == followingsCount
       expect(user.publicFavoritesCount) == publicFavoritesCount
-
       
     }
   }

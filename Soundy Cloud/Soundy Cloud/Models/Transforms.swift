@@ -9,6 +9,7 @@
 import Foundation
 import  ObjectMapper
 
+// swiftlint:disable:next line_length
 func enumTransform<EnumType: RawRepresentable>(test: EnumType? = nil) -> TransformOf<EnumType, String> where EnumType.RawValue == String {
   return TransformOf<EnumType, String>(fromJSON: { (value: String?) -> EnumType? in
     guard let rawString = value else {

@@ -29,7 +29,6 @@
 		18CCC6D91F2FB77100F3C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6D71F2FB77100F3C833 /* Main.storyboard */; };
 		18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DA1F2FB77100F3C833 /* Assets.xcassets */; };
 		18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCC6DC1F2FB77100F3C833 /* LaunchScreen.storyboard */; };
-		18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */; };
 		18CCC6F41F2FB77100F3C833 /* Soundy_CloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */; };
 		18E76C021F3C6684004E958A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C011F3C6684004E958A /* Track.swift */; };
 		18E76C041F3C6CD4004E958A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C031F3C6CD4004E958A /* User.swift */; };
@@ -37,6 +36,10 @@
 		18E76C081F3DC2CA004E958A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C071F3DC2CA004E958A /* Activity.swift */; };
 		ABA5AFA3268E5B1C5030F160 /* Pods_Soundy_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F149888660F73B341F90CA /* Pods_Soundy_Cloud.framework */; };
 		BB0A1FB81F603FA90061932A /* SoundCloudAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0A1FB71F603FA90061932A /* SoundCloudAPI.swift */; };
+		BB0A20011F6064130061932A /* SoundCloudAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0A20001F6064130061932A /* SoundCloudAPITest.swift */; };
+		BB0A20021F606D160061932A /* Playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = BB0A1FBA1F603FF90061932A /* Playlist.json */; };
+		BB0A20031F606D1D0061932A /* Track.json in Resources */ = {isa = PBXBuildFile; fileRef = BB0A1FBB1F603FF90061932A /* Track.json */; };
+		BB0A20041F606D210061932A /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = BB0A1FBC1F603FF90061932A /* User.json */; };
 		BB173D1B1F52CB9F0048A8B7 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB173D1A1F52CB9F0048A8B7 /* TestHelpers.swift */; };
 		BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */; };
 		BBDD26BC1F50365800409AB7 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD26BB1F50365800409AB7 /* PlaylistTests.swift */; };
@@ -80,7 +83,6 @@
 		18CCC6DD1F2FB77100F3C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CCC6DF1F2FB77100F3C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CCC6E41F2FB77100F3C833 /* Soundy CloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Soundy CloudTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundy_CloudTests.swift; sourceTree = "<group>"; };
 		18CCC6EA1F2FB77100F3C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CCC6EF1F2FB77100F3C833 /* Soundy CloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Soundy CloudUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCC6F31F2FB77100F3C833 /* Soundy_CloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundy_CloudUITests.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		BB0A1FBA1F603FF90061932A /* Playlist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Playlist.json; sourceTree = "<group>"; };
 		BB0A1FBB1F603FF90061932A /* Track.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Track.json; sourceTree = "<group>"; };
 		BB0A1FBC1F603FF90061932A /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		BB0A20001F6064130061932A /* SoundCloudAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloudAPITest.swift; sourceTree = "<group>"; };
 		BB173D1A1F52CB9F0048A8B7 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		BBA71CE41F33CC6C00D6DF69 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BBDD26BB1F50365800409AB7 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
@@ -232,8 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				BB173D1A1F52CB9F0048A8B7 /* TestHelpers.swift */,
+				BB0A1FFD1F6063A20061932A /* API Test */,
 				180FAC271F430778003BE14B /* API Model tests */,
-				18CCC6E81F2FB77100F3C833 /* Soundy_CloudTests.swift */,
 				189A33361F38656100564918 /* TabBarViewModelTests.swift */,
 				18CCC6EA1F2FB77100F3C833 /* Info.plist */,
 			);
@@ -265,6 +268,14 @@
 				BB0A1FBC1F603FF90061932A /* User.json */,
 			);
 			path = "Stubbed Data";
+			sourceTree = "<group>";
+		};
+		BB0A1FFD1F6063A20061932A /* API Test */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A20001F6064130061932A /* SoundCloudAPITest.swift */,
+			);
+			path = "API Test";
 			sourceTree = "<group>";
 		};
 		F004E0DEE6B6F8A66FA31368 /* Pods */ = {
@@ -403,6 +414,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0A20041F606D210061932A /* User.json in Resources */,
+				BB0A20031F606D1D0061932A /* Track.json in Resources */,
+				BB0A20021F606D160061932A /* Playlist.json in Resources */,
 				BBA71CE51F33CC6C00D6DF69 /* .swiftlint.yml in Resources */,
 				18CCC6DE1F2FB77100F3C833 /* LaunchScreen.storyboard in Resources */,
 				18CCC6DB1F2FB77100F3C833 /* Assets.xcassets in Resources */,
@@ -435,14 +449,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Soundy CloudTests/Pods-Soundy CloudTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -537,7 +557,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Soundy Cloud/Pods-Soundy Cloud-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya.default-RxSwift/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -613,11 +633,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0A20011F6064130061932A /* SoundCloudAPITest.swift in Sources */,
 				18A6DACA1F4ADC7D000529A9 /* UserTests.swift in Sources */,
 				189A33371F38656100564918 /* TabBarViewModelTests.swift in Sources */,
 				189A33381F3869EE00564918 /* TabBarViewModel.swift in Sources */,
 				189A33391F3869FA00564918 /* TabItem.swift in Sources */,
-				18CCC6E91F2FB77100F3C833 /* Soundy_CloudTests.swift in Sources */,
 				180FAC3B1F431859003BE14B /* Transforms.swift in Sources */,
 				BBDD26BC1F50365800409AB7 /* PlaylistTests.swift in Sources */,
 				180FAC2C1F430848003BE14B /* TrackTests.swift in Sources */,
