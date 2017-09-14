@@ -10,7 +10,6 @@
 		1038C1A4B6A571B69C26C1BF /* Pods_Soundy_CloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AF58E92AB978A9AE32F675 /* Pods_Soundy_CloudTests.framework */; };
 		180FAC241F419AD1003BE14B /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC231F419AD1003BE14B /* Playlist.swift */; };
 		180FAC261F4302C2003BE14B /* Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC251F4302C2003BE14B /* Transforms.swift */; };
-		180FAC2A1F4307D7003BE14B /* Track.json in Resources */ = {isa = PBXBuildFile; fileRef = 180FAC291F4307D7003BE14B /* Track.json */; };
 		180FAC2C1F430848003BE14B /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FAC2B1F430848003BE14B /* TrackTests.swift */; };
 		180FAC321F4308A0003BE14B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C011F3C6684004E958A /* Track.swift */; };
 		180FAC331F4308A0003BE14B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E76C031F3C6CD4004E958A /* User.swift */; };
@@ -65,7 +64,6 @@
 /* Begin PBXFileReference section */
 		180FAC231F419AD1003BE14B /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		180FAC251F4302C2003BE14B /* Transforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transforms.swift; sourceTree = "<group>"; };
-		180FAC291F4307D7003BE14B /* Track.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Track.json; sourceTree = "<group>"; };
 		180FAC2B1F430848003BE14B /* TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
 		180FAC391F431359003BE14B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Soundy_Cloud-gmtujrtuceuktzfyxmjnzmoematg/Build/Products/Debug-iphoneos/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		180FAC3C1F45AD11003BE14B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
@@ -137,20 +135,11 @@
 		180FAC271F430778003BE14B /* API Model tests */ = {
 			isa = PBXGroup;
 			children = (
-				180FAC281F43078C003BE14B /* Sample data */,
 				180FAC2B1F430848003BE14B /* TrackTests.swift */,
 				18A6DAC91F4ADC7D000529A9 /* UserTests.swift */,
 				BBDD26BB1F50365800409AB7 /* PlaylistTests.swift */,
 			);
 			path = "API Model tests";
-			sourceTree = "<group>";
-		};
-		180FAC281F43078C003BE14B /* Sample data */ = {
-			isa = PBXGroup;
-			children = (
-				180FAC291F4307D7003BE14B /* Track.json */,
-			);
-			path = "Sample data";
 			sourceTree = "<group>";
 		};
 		185EC67A1F3307FF0007C179 /* Interface */ = {
@@ -428,7 +417,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180FAC2A1F4307D7003BE14B /* Track.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
