@@ -35,7 +35,7 @@ struct Track: ImmutableMappable {
   let description: String?
   let duration: Int
   let genre: String?
-  let type: TrackType
+  let type: TrackType?
   //let artworkURL: URL //TODO: the link is for a large image - so we need to make it possible to adjust it
   let releaseDate: Date?
 //  let tags: [String]
@@ -55,7 +55,7 @@ struct Track: ImmutableMappable {
     description = try? map.value("description")
     duration = try map.value("duration")
     genre = try? map.value("genre")
-    type = try map.value("track_type", using: enumTransform())
+    type = try? map.value("track_type", using: enumTransform())
     //permanentURL = try map.value("permalink_url")
     let day: Int? = try? map.value("release_day")
     let month: Int? = try? map.value("release_month")

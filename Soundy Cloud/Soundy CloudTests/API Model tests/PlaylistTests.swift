@@ -15,6 +15,7 @@ import ObjectMapper
 
 class PlaylistTests: QuickSpec {
   
+  // swiftlint:disable:next function_body_length
   override func spec() {
     it("convers from JSON") {
       let faker = Faker()
@@ -30,7 +31,7 @@ class PlaylistTests: QuickSpec {
                        "release_day": NSNull(),
                        "streamable": true,
                        "downloadable": true,
-                       "user" : ["id" : 123, "username" : "jokn dou"]] as [String : Any]
+                       "user": ["id": 123, "username": "jokn dou"]] as [String : Any]
       
       //      let tracks: [Track]
       let playlistId = faker.number.randomInt()
@@ -43,24 +44,23 @@ class PlaylistTests: QuickSpec {
       let downloadable = faker.number.randomBool()
       let type = PlaylistType.album
       
-      let jsonData = ["id" : playlistId,
-                      "created_at" : creationDate,
-                      "user" : ["id" : 123, "username" : "jokn dou"],
-                      "label" : ["id" : 123],
-                      "title" : title,
-                      "description" : description,
-                      "duration" : duration,
-                      "genre" : genre,
-                      "streamable" : streamable,
-                      "downloadable" : downloadable,
-                      "type" : type.rawValue,
-                      "traks" : [trackDict]] as [String : Any]
+      let jsonData = ["id": playlistId,
+                      "created_at": creationDate,
+                      "user": ["id": 123, "username": "jokn dou"],
+                      "label": ["id": 123],
+                      "title": title,
+                      "description": description,
+                      "duration": duration,
+                      "genre": genre,
+                      "streamable": streamable,
+                      "downloadable": downloadable,
+                      "type": type.rawValue,
+                      "tracks": [trackDict]] as [String : Any]
       
-      var playlist : Playlist
+      var playlist: Playlist
       do {
         playlist = try Playlist(JSON: jsonData)
-      }
-      catch {
+      } catch {
         if let mapError = error as? MapError {
           XCTAssertTrue(false, mapError.description)
         } else {
